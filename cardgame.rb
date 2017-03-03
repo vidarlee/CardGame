@@ -17,12 +17,12 @@ class Player
     update_reachable_min_max
   end
 
-  #define a number(@seq_id) to mark which card num is valid for this player
-  #et. there are 5 cards and 3 playes and @seq_id.to_s(2) = "11001"
-  #  @seq_id(1 1 0 0 1)count from right side 
-  # "0" means the player can't be this num
-  # "1" means the player can be this num
-  # so 11001 mean the player can be 5, 4, 1, and can't be 3, 2
+  #define a number(@seq_id) to mark which card number is valid for this player
+  #et. there are 5 cards and 3 players, and @seq_id.to_s(2) = "11001"
+  # @seq_id(1 1 0 0 1)count from right side
+  # "0" means the player can't be this number
+  # "1" means the player can be this number
+  # so "11001" means the player can be 5, 4, 1, and can't be 3, 2
   def init_seq_id
     base_num = (1 << @all_cards_num) - 1
     @card_num_arr.each do |e|
@@ -32,7 +32,7 @@ class Player
     return base_num
   end
 
-  #update the min and max num which play can be
+  #update the mininum and maximum number which the player can be
   def update_reachable_min_max
     max_flag = true
     min_flag = true
@@ -49,7 +49,7 @@ class Player
     end
   end
 
-  def answer(seq_id=@seq_id, judger=@judger)
+  def answer
     return "mid" if @reachable_min > @unreachable_min && 
                       @reachable_max < @unreachable_max
     return "max" if @reachable_min > @unreachable_max
@@ -57,7 +57,7 @@ class Player
     return nil
   end
 
-  #if some player(position) can't get answer, then determine which num can't be
+  #the player(position) can't get answer, then determine which number can't be
   def update_seq_id(position)
     temp_seq_id = @seq_id | (1 << @card_num_arr[position] - 1)
     temp_judger = @judger
