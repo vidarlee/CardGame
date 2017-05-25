@@ -1,3 +1,4 @@
+# The class of the Player
 class Player
   attr_reader :position
 
@@ -17,22 +18,22 @@ class Player
     update_reachable_min_max
   end
 
-  #define a number(@seq_id) to mark which card number is valid for this player
-  #et. there are 5 cards and 3 players, and @seq_id.to_s(2) = "11001"
-  # @seq_id(1 1 0 0 1)count from right side
-  # "0" means the player can't be this number
-  # "1" means the player can be this number
-  # so "11001" means the player can be 5, 4, 1, and can't be 3, 2
+  # Define a number(@seq_id) to mark which card number is valid for this player
+  # et. there are 5 cards and 3 players, and @seq_id.to_s(2) = "11001"
+  #   @seq_id(1 1 0 0 1)count from right side
+  #   "0" means the player can't be this number
+  #   "1" means the player can be this number
+  #   so "11001" means the player can be 5, 4, 1, and can't be 3, 2
   def init_seq_id
     base_num = (1 << @all_cards_num) - 1
     @card_num_arr.each do |e|
       next if e == @card_num_arr[@position]
       base_num = base_num ^ (1 << (e - 1))
-    end  
-    return base_num
+    end
+    base_num
   end
 
-  #update the mininum and maximum number which the player can be
+  # Update the mininum and maximum number which the player can be
   def update_reachable_min_max
     max_flag = true
     min_flag = true
@@ -50,37 +51,37 @@ class Player
   end
 
   def answer
-    return "mid" if @reachable_min > @unreachable_min && 
-                      @reachable_max < @unreachable_max
-    return "max" if @reachable_min > @unreachable_max
-    return "min" if @reachable_max < @unreachable_min
-    return nil
+    return 'mid' if @reachable_min > @unreachable_min &&
+                    @reachable_max < @unreachable_max
+    return 'max' if @reachable_min > @unreachable_max
+    return 'min' if @reachable_max < @unreachable_min
+    nil
   end
 
-  #the player(position) can't get answer, then determine which number can't be
+  # The player(position) can't get answer, then determine which number can't be
   def update_seq_id(position)
     temp_seq_id = @seq_id | (1 << @card_num_arr[position] - 1)
     temp_judger = @judger
     (0..(@members_num - 1)).each do |ee|
       tt_judger = temp_judger << ee
-      if (temp_seq_id & tt_judger) == tt_judger && 
-      	   (temp_seq_id ^ tt_judger) != (1 << @card_num_arr[position] - 1)
-        #can't be this number, otherwise the player can determine
+      if (temp_seq_id & tt_judger) == tt_judger &&
+         (temp_seq_id ^ tt_judger) != (1 << @card_num_arr[position] - 1)
+        # Can't be this number, otherwise the player can determine
         @seq_id = @seq_id ^ (temp_seq_id ^ tt_judger)
         @judger = @judger >> 1
       end
     end
 
-    if @unreachable_max == @all_cards_num &&  @card_num_arr[position] != @all_cards_num \
-    	&& @reachable_min < @unreachable_min
-      #can't be this reachable min, otherwise the play can determine mid
+    if @unreachable_max == @all_cards_num && @card_num_arr[position] \
+       != @all_cards_num && @reachable_min < @unreachable_min
+      # Can't be this reachable min, otherwise the play can determine mid
       @seq_id = @seq_id ^ (1 << @reachable_min - 1)
       @judger = @judger >> 1
     end
 
     if @unreachable_min == 1 && @card_num_arr[position] != 1 &&
-      @reachable_max > @unreachable_max
-      #can't be this reachable max, otherwise the play can determine mid
+       @reachable_max > @unreachable_max
+      # Can't be this reachable max, otherwise the play can determine mid
       @seq_id = @seq_id ^ (1 << @reachable_max - 1)
       @judger = @judger >> 1
     end
@@ -96,14 +97,14 @@ class Cardgame
     @all_cards_num = all_cards_num
     @members_num = card_num_arr.size
     @card_num_arr = card_num_arr
-    @name_of_members = ("A".."Z").to_a[0..@members_num-1]
+    @name_of_members = ('A'..'Z').to_a[0..@members_num - 1]
     @player_arr = []
     init_game
   end
 
   def init_game
     if params_invalid
-      #raise "Input is invalid, please check and run again"
+      # raise "Input is invalid, please check and run again"
       return
     end
     @members_num.times do |e|
@@ -112,13 +113,14 @@ class Cardgame
   end
 
   def params_invalid
-    return @card_num_arr.sort[-1] > @all_cards_num || @card_num_arr.sort[0] < 1 ||
-             @members_num > @all_cards_num || @card_num_arr.uniq.size < @card_num_arr.size
+    @card_num_arr.sort[-1] > @all_cards_num || @card_num_arr.sort[0] < 1 ||
+      @members_num > @all_cards_num ||
+      @card_num_arr.uniq.size < @card_num_arr.size
   end
 
   def solution
     if params_invalid
-      puts "Input is invalid, please check and run again"
+      puts 'Input is invalid, please check and run again'
       return
     end
     res_arr = []
@@ -141,7 +143,7 @@ class Cardgame
 end
 
 
-#for test
+# For test
 
 Cardgame.new(5, [1, 3, 5]).solution
 Cardgame.new(5, [1, 4, 5]).solution
@@ -163,5 +165,5 @@ Cardgame.new(18, [2, 6, 1, 16]).solution
 Cardgame.new(10, [2, 6, 11]).solution
 Cardgame.new(0, [2, 6, 11]).solution
 Cardgame.new(18, [2, 0, 11]).solution
-#Cardgame.new(7, [3, 5]).solution  #no answer
-#Cardgame.new(9, [2, 4, 6, 8]).solution #no answer
+# Cardgame.new(7, [3, 5]).solution  #no answer
+# Cardgame.new(9, [2, 4, 6, 8]).solution #no answer
