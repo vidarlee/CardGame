@@ -1,1 +1,31 @@
-<mxfile host="app.diagrams.net" modified="2021-09-08T09:36:00.401Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36 Edg/93.0.961.38" version="15.1.0" etag="k8sNdJn7Ro5xiYdk9_8v" type="github"><diagram id="lCeZbRL9sc3tYvRht575">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-09-08T10:20:12.309Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36 Edg/93.0.961.38" etag="Z0tNeqV0Ocg7gox6TfvU" version="15.1.0" type="github">
+  <diagram id="lCeZbRL9sc3tYvRht575" name="Page-1">
+    <mxGraphModel dx="1278" dy="579" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="DfWAbS5h_NvvGpuiU_qf-1" value="项目立项" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="334" y="200" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="DfWAbS5h_NvvGpuiU_qf-2" value="IT PM登录平台创建项目" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="324" y="270" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="DfWAbS5h_NvvGpuiU_qf-3" value="选择项目流程类型" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="324" y="340" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="DfWAbS5h_NvvGpuiU_qf-4" value="&lt;div&gt;&lt;span&gt;选择项目所需Devops Services&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="324" y="410" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="DfWAbS5h_NvvGpuiU_qf-5" value="&lt;div&gt;&lt;span&gt;邀请团队成员&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="324" y="480" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="DfWAbS5h_NvvGpuiU_qf-6" value="&lt;div&gt;&lt;span&gt;设置团队成员权限&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="324" y="550" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="DfWAbS5h_NvvGpuiU_qf-7" value="&lt;div&gt;&lt;span&gt;开启Analysis Views&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="324" y="620" width="100" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
