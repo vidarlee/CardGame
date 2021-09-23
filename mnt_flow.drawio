@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-09-23T09:53:34.078Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.82 Safari/537.36 Edg/93.0.961.52" etag="mSgSrQ-XuYwtVr8f8e0h" version="15.3.0" type="github">
+<mxfile host="app.diagrams.net" modified="2021-09-23T09:59:07.020Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.82 Safari/537.36 Edg/93.0.961.52" etag="IF8GS0VRl2ODPhEEb2IK" version="15.3.0" type="github">
   <diagram id="AuBM1nw7O5F66HEYCuex" name="Page-1">
     <mxGraphModel dx="1278" dy="1748" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -22,34 +22,70 @@
         <mxCell id="Mmjbvq9GVyGEjZoJUJHH-12" value="向Devops团队提供项目基本信息，和IT PM个人基本信息，等待项目被创建并被邀请加入项目" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
           <mxGeometry x="281.25" y="-23" width="157.5" height="66" as="geometry" />
         </mxCell>
+        <mxCell id="Mmjbvq9GVyGEjZoJUJHH-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Mmjbvq9GVyGEjZoJUJHH-14" target="Mmjbvq9GVyGEjZoJUJHH-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="Mmjbvq9GVyGEjZoJUJHH-14" value="获得申请需求" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
           <mxGeometry x="520" y="-23" width="161.5" height="66" as="geometry" />
         </mxCell>
         <mxCell id="Mmjbvq9GVyGEjZoJUJHH-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="Mmjbvq9GVyGEjZoJUJHH-18">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="210" y="230" as="sourcePoint" />
+            <mxPoint x="602" y="710" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="Mmjbvq9GVyGEjZoJUJHH-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="Mmjbvq9GVyGEjZoJUJHH-18" target="Mmjbvq9GVyGEjZoJUJHH-21">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="Mmjbvq9GVyGEjZoJUJHH-18" value="&lt;div style=&quot;text-align: justify&quot;&gt;通知IT PM项目准备就绪&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="130" y="253" width="157.5" height="55" as="geometry" />
+          <mxGeometry x="523" y="750" width="157.5" height="38" as="geometry" />
         </mxCell>
         <mxCell id="Mmjbvq9GVyGEjZoJUJHH-21" value="创建项目流程结束" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="151.25" y="328" width="115" height="50" as="geometry" />
+          <mxGeometry x="544.25" y="808" width="115" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Mmjbvq9GVyGEjZoJUJHH-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="Mmjbvq9GVyGEjZoJUJHH-23" target="Mmjbvq9GVyGEjZoJUJHH-24">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="Mmjbvq9GVyGEjZoJUJHH-23" value="Devops平台上创建项目" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
           <mxGeometry x="520" y="80" width="161.5" height="40" as="geometry" />
         </mxCell>
+        <mxCell id="Mmjbvq9GVyGEjZoJUJHH-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Mmjbvq9GVyGEjZoJUJHH-24" target="Mmjbvq9GVyGEjZoJUJHH-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="Mmjbvq9GVyGEjZoJUJHH-24" value="进行项目设置" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
           <mxGeometry x="520" y="160" width="161.5" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Mmjbvq9GVyGEjZoJUJHH-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Mmjbvq9GVyGEjZoJUJHH-25" target="Mmjbvq9GVyGEjZoJUJHH-26">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="Mmjbvq9GVyGEjZoJUJHH-25" value="邀请IT PM加入，并设置为项目管理员" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
           <mxGeometry x="520" y="240" width="161.5" height="40" as="geometry" />
         </mxCell>
+        <mxCell id="Mmjbvq9GVyGEjZoJUJHH-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Mmjbvq9GVyGEjZoJUJHH-26" target="Mmjbvq9GVyGEjZoJUJHH-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="Mmjbvq9GVyGEjZoJUJHH-26" value="开启和管理Analysis Views" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
           <mxGeometry x="520" y="320" width="161.5" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Mmjbvq9GVyGEjZoJUJHH-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="Mmjbvq9GVyGEjZoJUJHH-27" target="Mmjbvq9GVyGEjZoJUJHH-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Mmjbvq9GVyGEjZoJUJHH-27" value="在Teams中创建项目团队" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="520" y="400" width="161.5" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Mmjbvq9GVyGEjZoJUJHH-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Mmjbvq9GVyGEjZoJUJHH-28" target="Mmjbvq9GVyGEjZoJUJHH-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Mmjbvq9GVyGEjZoJUJHH-28" value="集成Devops项目的Dashboard和看板到项目团队首页" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="520" y="480" width="161.5" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Mmjbvq9GVyGEjZoJUJHH-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Mmjbvq9GVyGEjZoJUJHH-29" target="Mmjbvq9GVyGEjZoJUJHH-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Mmjbvq9GVyGEjZoJUJHH-29" value="SharePoint团队空间创建标准目录结构" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="520" y="570" width="161.5" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Mmjbvq9GVyGEjZoJUJHH-30" value="Devops平台上创建wiki，完善Summary项目描述添加SharePoint团队空间链接" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="520" y="660" width="161.5" height="50" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
